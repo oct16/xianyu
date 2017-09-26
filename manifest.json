@@ -1,0 +1,18 @@
+{
+  "name": "闲鱼搜索",
+  "description": "显示闲鱼搜索框",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://s.2.taobao.com/*",
+        "https://2.taobao.com/*"
+      ],
+      "js": ["xianyu.js"]
+    }
+  ],
+  "manifest_version": 2
+}
